@@ -6,3 +6,21 @@
 SELECT email
 FROM customer
 WHERE first_name = 'Nancy' AND last_name = 'Thomas';
+
+-- Situation 2: 
+-- A customer wants to know what the movie "Outlaw Hanky" is about.
+-- Could you give them the description for the movie "Outlaw Hanky"?
+
+-- Answer: 
+SELECT description
+FROM  film
+WHERE title = 'Outlaw Hanky';
+
+-- Situation 3: 
+-- A customer is late on their movie return and we've mailed them a letter to their address at '259 Ipoh Drive'.
+-- Can you get the phone number for the customer who lives at '259 Ipoh Drive'?
+
+-- Answer:
+SELECT phone
+FROM address
+WHERE address = '259 Ipoh Drive';
