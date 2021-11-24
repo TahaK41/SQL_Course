@@ -1,0 +1,19 @@
+-- Situation 1:
+-- We are launching a platinum service for our most loyal customers. We will assign platinum status to customers that have had 40 or more transaction payments.
+-- What customer IDs are eligible for platinum status?
+
+-- Answer:
+SEELCT customer_id,COUNT(*)
+FROM payment
+GROUP BY customer_id
+HAVING COUNT(*) >= 40;
+
+-- Situation 2:
+-- What are the customer IDs of customer who have spent more than $100 in payment tranactions with out staff ID member 2?
+
+-- Answer:
+SELECT customer_id,SUM(amount)
+FROM payment
+WHERE staff_id = 2
+GROUP BY customer_id
+HAVING SUM(amount) > 100;
