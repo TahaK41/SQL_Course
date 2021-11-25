@@ -7,7 +7,7 @@ SELECT district,email
 FROM address
 INNER JOIN customer 
 ON address.address_id = customer.address_id
-WHERE distinct = 'California';
+WHERE district = 'California';
 
 -- Situation 2:
 -- A customer walks in and is a huge fan of the actor "Nick Wahlberg" and wants to know which movies he is in.
