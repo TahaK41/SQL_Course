@@ -9,7 +9,7 @@ GROUP BY customer_id
 HAVING COUNT(*) >= 40;
 
 -- Situation 2:
--- What are the customer IDs of customer who have spent more than $100 in payment tranactions with out staff ID member 2?
+-- What are the customer IDs of customer who have spent more than $100 in payment transctions with our staff ID member 2?
 
 -- Answer:
 SELECT customer_id,SUM(amount)
