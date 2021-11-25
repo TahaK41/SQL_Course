@@ -1,6 +1,6 @@
 -- Situation 1:
 -- We want to reward our first 10 paying customers.
--- What are the customer IDs of the first 10 custoemr who created a payment?
+-- What are the customer IDs of the first 10 customer who created a payment?
 
 -- Answer:
 SELECT customer_id
@@ -9,7 +9,7 @@ ORDER BY payment_date ASC
 LIMIT 10;
 
 -- Situation 2:
--- A customer wants to quickly rents a video to watch over their short lunch break.
+-- A customer wants to quickly rent a video to watch over their short lunch break.
 -- What are the titles of the 5 shortest (in length of runtime) movies?
 
 -- Answer:
