@@ -18,7 +18,7 @@ FROM film
 GROUP BY rating
 
 -- Situation 3:
--- We are running a promotion to reqard out top 5 customers with coupons.
+-- We are running a promotion to reward out the top 5 customers with coupons.
 -- What are the customer IDs of the top 5 customers by total spend?
 
 -- Answer:
